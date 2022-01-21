@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ ob.title }}</h1>
+<p>{{ ob.description }}</p>
+<p>price: {{ ob.price }}$</p>
+<p>status: {{ ob.status }}</p>
+<p>created: {{ ob.create_at }}</p>
+<p>views: {{ ob.views }}</p>
+<p>-------------------------</p>
+<p>Seller: {{ ob.user }}</p>
+<p>Phone: {{ ob.user.tel }}</p>
+</body>
+</html>

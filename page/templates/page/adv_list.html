@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>free ads</title>
+</head>
+<body>
+{% for ad in ads %}
+    <a href="advertisement/{{ ad.id }}">{{ ad }}</a> | {{ ad.price }}$ | {{ ad.uah }} uah | {{ ad.heading }}<br>
+{% endfor %}
+</body>
+</html>
