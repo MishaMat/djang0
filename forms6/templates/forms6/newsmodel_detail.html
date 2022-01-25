@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail news</title>
+</head>
+<body>
+<h2>{{ news.title }}</h2>
+<p>{{ news.main_info }}</p>
+<p>{{ news.edit_at }}</p>
+<p>{{ news.flag }}</p>
+<p>------------------------------------------------------</p>
+<h3>Comments</h3>
+<ul>
+    {% for comment in comments %}
+        <li><h4>{{ comment.username }}</h4>
+        {{ comment.comment }}</li>
+    {% endfor %}
+</ul>
+<p>------------------------------------------------------</p>
+<form method="post">
+    {% csrf_token %}
+    {{ comment_form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+<a href="edit/">Edit news</a>
+</body>
+</html>

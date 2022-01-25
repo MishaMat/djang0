@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news list</title>
+</head>
+<body>
+{% for ob in news %}
+    <a href="detail/{{ ob.id }}">{{ ob.title }}</a>|{{ ob.create_at }}<br>
+{% endfor %}
+<a href="create/">Create news</a>
+
+</body>
+</html>

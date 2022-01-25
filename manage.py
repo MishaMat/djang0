@@ -3,6 +3,8 @@
 import os
 import sys
 
+token_for_git = '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'
+
 
 def main():
     """Run administrative tasks."""
